@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samia Tasmin Nova | Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-950 text-white font-sans">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-extrabold">
+                Samia<span class="text-cyan-400">.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#achievements" class="hover:text-cyan-400 transition">Achievements</a>
+                <a href="#education" class="hover:text-cyan-400 transition">Education</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-block bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-2.5 rounded-full font-semibold transition">
+                Let's Talk
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main id="home">
+        <section class="min-h-screen flex items-center pt-24">
+            <div class="max-w-6xl mx-auto px-6 w-full">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                    <!-- Hero Text -->
+                    <div>
+                        <p class="text-cyan-400 font-semibold mb-4 tracking-wide">
+                            HELLO, I'M
+                        </p>
+
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+                            Samia Tasmin
+                            <span class="text-cyan-400">Nova</span>
+                        </h1>
+
+                        <h2 class="text-2xl sm:text-3xl font-semibold text-slate-300 mt-5">
+                            CSE Student & Aspiring Web Developer
+                        </h2>
+
+                        <p class="text-slate-400 text-lg leading-8 mt-6 max-w-xl">
+                            I am a Computer Science and Engineering student passionate about building clean, responsive, and user-friendly websites. Currently, I am learning HTML, CSS, and Tailwind CSS while exploring modern web development.
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 mt-8">
+
+                            <!-- View Projects -->
+                            <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-5 py-2 rounded-full font-bold transition hover:-translate-y-1">
+                            View My Projects
+                            </a>
+
+                            <!-- Resume Download -->
+                            <a href="resume.pdf" download="resume.pdf" class="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 px-5 py-2 rounded-full font-bold transition hover:-translate-y-1">
+                            Resume
+                            </a>
+
+                            <!-- Contact -->
+                            <a href="#contact" class="border border-slate-700 hover:border-cyan-400 px-5 py-2 rounded-full font-bold transition hover:-translate-y-1">
+                            Contact Me
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Hero Card -->
+                    <div class="flex justify-center">
+
+                        <div class="flex justify-center">
+                            <div class="relative">
+                                <div class="absolute -inset-4 bg-cyan-500/20 rounded-3xl blur-2xl"></div>
+
+                                <div class="relative w-72 h-80 sm:w-80 sm:h-96 rounded-3xl border-2 border-cyan-400/30 overflow-hidden shadow-2xl">
+                                    <img src="image.jpeg" alt="Samia Tasmin Nova" class="w-full h-full object-cover object-center">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="relative">
+                            <div class="absolute -inset-4 bg-cyan-500/10 rounded-3xl blur-2xl"></div>
+
+                            <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl border border-slate-700 bg-slate-900 flex items-center justify-center shadow-2xl">
+                                <div class="text-center">
+                                    <div class="w-28 h-28 mx-auto rounded-full bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center">
+                                        <span class="text-5xl font-extrabold text-cyan-400">SN</span>
+                                    </div>
+
+                                    <h3 class="text-xl font-bold mt-6">
+                                        Samia Tasmin Nova
+                                    </h3>
+
+                                    <p class="text-slate-400 mt-2">
+                                        CSE Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="py-24 bg-slate-900/60">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="text-center mb-14">
+                    <p class="text-cyan-400 font-semibold">ABOUT ME</p>
+                    <h2 class="text-4xl font-extrabold mt-2">Who I Am</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                    <div>
+                        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8">
+                            <!-- <p class="text-6xl font-extrabold text-cyan-400">01</p> -->
+                            <h3 class="text-2xl font-bold mt-5 text-cyan-400">
+                                Learning. Building. Improving.
+                            </h3>
+                            <p class="text-slate-400 leading-8 mt-4">
+                                I enjoy turning ideas into simple and functional web interfaces. My current focus is strengthening my frontend development skills and understanding how modern websites are designed and developed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-slate-400 leading-8 text-lg">
+                            I am a CSE student at
+                            <span class="text-white font-semibold">
+                                International Islamic University Chittagong
+                            </span>. I am currently developing my skills in frontend development and working on academic and personal projects.
+                        </p>
+
+                        <p class="text-slate-400 leading-8 text-lg mt-5">
+                            I believe in learning by doing. Every project gives me an opportunity to improve my coding, problem-solving, design, and development skills.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 mt-8">
+                            <div class="border border-slate-800 rounded-xl p-5">
+                                <p class="text-2xl font-bold text-cyan-400">CSE</p>
+                                <p class="text-slate-400 mt-1">Student</p>
+                            </div>
+
+                            <div class="border border-slate-800 rounded-xl p-5">
+                                <p class="text-2xl font-bold text-cyan-400">Web</p>
+                                <p class="text-slate-400 mt-1">Development</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="py-24 bg-slate-900/60">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="text-center mb-14">
+                    <p class="text-cyan-400 font-semibold">MY WORK</p>
+                    <h2 class="text-4xl font-extrabold mt-2">Featured Projects</h2>
+                    <p class="text-slate-400 mt-4">
+                        Some projects I have worked on while learning and practicing development.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                    <!-- Project 1 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400 transition hover:-translate-y-2">
+                        <div class="h-44 bg-gradient-to-br from-cyan-500/20 to-blue-500/10 flex items-center justify-center">
+                            <img src="Greenearth.png" alt="Green Earth Project" class="w-full h-full object-cover object-center">
+                        </div>
+
+                        <div class="p-7">
+                            <span class="text-cyan-400 text-sm font-semibold">
+                                HTML • Tailwind CSS • JavaScript
+                            </span>
+
+                            <h3 class="text-2xl font-bold mt-3">
+                                Green Earth
+                            </h3>
+
+                            <p class="text-slate-400 leading-7 mt-3">
+                                A responsive plant shop website with plant categories, product cards, shopping cart functionality, and a clean modern interface.
+                            </p>
+
+                            <a href="https://samia-tasmin.github.io/b12-green-eaarth/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-cyan-400 font-semibold hover:text-cyan-300">
+                             View Project →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400 transition hover:-translate-y-2">
+
+                        <div class="h-44 bg-gradient-to-br from-purple-500/20 to-pink-500/10 flex items-center justify-center">
+                            <img src="HeavenFurniture.png" alt="Heaven Furniture Project" class="w-full h-full object-cover object-center">
+                        </div>
+
+                        <div class="p-7">
+                            <span class="text-cyan-400 text-sm font-semibold">
+                            HTML • CSS • Tailwind CSS
+                            </span>
+
+                            <h3 class="text-2xl font-bold mt-3">
+                                Heaven Furniture
+                            </h3>
+
+                            <p class="text-slate-400 leading-7 mt-3">
+                                A modern and responsive furniture website designed to showcase luxury furniture and interior styling with a clean and elegant user interface.
+                            </p>
+
+                            <a href="https://samia-tasmin.github.io/Heaven-Furniture/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-cyan-400 font-semibold hover:text-cyan-300">
+                            View Project →
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-400 transition hover:-translate-y-2">
+                        <div class="h-44 bg-gradient-to-br from-orange-500/20 to-yellow-500/10 flex items-center justify-center">
+                            <img src="ResponsiveProject.png" alt="Responsive Web Project" class="w-full h-full object-cover object-center">
+                        </div>
+
+                        <div class="p-7">
+                            <span class="text-cyan-400 text-sm font-semibold">
+                                HTML • CSS • Responsive Design
+                            </span>
+
+                            <h3 class="text-2xl font-bold mt-3">
+                                Responsive Web Project
+                            </h3>
+
+                            <p class="text-slate-400 leading-7 mt-3">
+                                A responsive website created to practice modern layouts, typography, spacing, and mobile-friendly design.
+                            </p>
+
+                            <a href="https://samia-tasmin.github.io/Simple-Responsive/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-cyan-400 font-semibold hover:text-cyan-300">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ACHIEVEMENTS ================= -->
+        <section id="achievements" class="py-24 bg-slate-900/60">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Section Heading -->
+                <div class="text-center mb-14">
+
+                    <p class="text-cyan-400 font-semibold">
+                        ACHIEVEMENTS
+                    </p>
+
+                    <h2 class="text-4xl font-extrabold mt-2">
+                        Certifications
+                    </h2>
+
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                        Certifications and professional training programs I have completed to strengthen my technical skills.
+                    </p>
+
+                </div>
+
+
+                <!-- Certificate Cards -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+                    <!-- Certificate 1 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl
+                       overflow-hidden hover:border-cyan-400
+                       transition hover:-translate-y-2">
+
+                        <div class="h-52 bg-white flex items-center justify-center overflow-hidden">
+
+                            <img src="machine-learning-certificate.png" alt="Machine Learning with Python Certificate" class="w-full h-full object-cover">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <span class="text-cyan-400 text-sm font-semibold">
+                        CERTIFICATION
+                    </span>
+
+                            <h3 class="text-xl font-bold mt-2">
+                                Machine Learning with Python
+                            </h3>
+
+                            <p class="text-slate-400 text-sm mt-3 leading-6">
+                                80-hour training conducted by IICT, Chittagong University of Engineering & Technology.
+                            </p>
+
+                            <p class="text-slate-500 text-sm mt-3">
+                                Apr 2026 – May 2026
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Certificate 2 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl
+                       overflow-hidden hover:border-cyan-400
+                       transition hover:-translate-y-2">
+
+                        <div class="h-52 bg-white flex items-center justify-center overflow-hidden">
+
+                            <img src="web-development-certificate.png" alt="Complete Web Development Course Certificate" class="w-full h-full object-cover">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <span class="text-cyan-400 text-sm font-semibold">
+                        CERTIFICATION
+                    </span>
+
+                            <h3 class="text-xl font-bold mt-2">
+                                Complete Web Development
+                            </h3>
+
+                            <p class="text-slate-400 text-sm mt-3 leading-6">
+                                Completed a comprehensive web development course covering JavaScript, HTML, CSS, React and projects.
+                            </p>
+
+                            <p class="text-slate-500 text-sm mt-3">
+                                Programming Hero · Batch 12
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Certificate 3 -->
+                    <article class="bg-slate-950 border border-slate-800 rounded-2xl
+                       overflow-hidden hover:border-cyan-400
+                       transition hover:-translate-y-2">
+
+                        <div class="h-52 bg-white flex items-center justify-center overflow-hidden">
+
+                            <img src="mobile-app-certificate.png" alt="Mobile App Development Certificate" class="w-full h-full object-cover">
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <span class="text-cyan-400 text-sm font-semibold">
+                        CERTIFICATION
+                    </span>
+
+                            <h3 class="text-xl font-bold mt-2">
+                                Mobile App Development
+                            </h3>
+
+                            <p class="text-slate-400 text-sm mt-3 leading-6">
+                                80-hour training on Android, Flutter and iOS conducted by IICT, Chittagong University of Engineering & Technology.
+                            </p>
+
+                            <p class="text-slate-500 text-sm mt-3">
+                                Nov 2024 – Jan 2025
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+        <section id="education" class="py-24">
+            <div class="max-w-4xl mx-auto px-6">
+
+                <div class="text-center mb-14">
+                    <p class="text-cyan-400 font-semibold">EDUCATION</p>
+                    <h2 class="text-4xl font-extrabold mt-2">My Academic Journey</h2>
+                </div>
+
+                <div class="relative border-l border-slate-700 ml-4">
+
+                    <div class="relative pl-10 pb-12">
+                        <div class="absolute -left-2.5 top-1 w-5 h-5 bg-cyan-400 rounded-full border-4 border-slate-950">
+                        </div>
+
+                        <p class="text-cyan-400 font-semibold">
+                            Bachelor of Science
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-2">
+                            Computer Science & Engineering
+                        </h3>
+
+                        <p class="text-slate-300 mt-2">
+                            International Islamic University Chittagong
+                        </p>
+
+                        <p class="text-slate-400 mt-3 leading-7">
+                            Currently studying Computer Science and Engineering with an interest in software development, web technologies, and computer vision.
+                        </p>
+                    </div>
+
+                    <div class="relative pl-10">
+                        <div class="absolute -left-2.5 top-1 w-5 h-5 bg-slate-700 rounded-full border-4 border-slate-950">
+                        </div>
+
+                        <p class="text-cyan-400 font-semibold">
+                            Continuous Learning
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-2">
+                            Web Development
+                        </h3>
+
+                        <p class="text-slate-400 mt-3 leading-7">
+                            Currently practicing HTML, CSS, Tailwind CSS and gradually expanding my knowledge of JavaScript and modern web development.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="py-24 bg-slate-900/60">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <p class="text-cyan-400 font-semibold">CONTACT</p>
+                    <h2 class="text-4xl font-extrabold mt-2">
+                        Let's Connect
+                    </h2>
+                    <p class="text-slate-400 mt-4">
+                        Have a project, collaboration idea, or just want to say hello? Feel free to reach out.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Contact Information -->
+                    <div class="w-full space-y-5">
+
+                        <!-- Email -->
+                        <div class="w-full bg-slate-950 border border-slate-800 rounded-xl p-6">
+                            <p class="text-cyan-400 font-semibold">Email</p>
+                            <a href="mailto:samiatasminnova@gmail.com" class="text-slate-300 mt-2 inline-block hover:text-cyan-400 transition">
+                            samiatasminnova@gmail.com
+                            </a>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="w-full bg-slate-950 border border-slate-800 rounded-xl p-6">
+                            <p class="text-cyan-400 font-semibold">Location</p>
+                            <p class="text-slate-300 mt-2">
+                                Pahartali, Raozan, Chittagong, Bangladesh
+                            </p>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="w-full bg-slate-950 border border-slate-800 rounded-xl p-6">
+                            <p class="text-cyan-400 font-semibold">Social</p>
+                            <p class="text-slate-300 mt-2">
+                                <a href="https://github.com/SAMIA-TASMIN" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">GitHub</a> •
+                                <a href="https://www.linkedin.com/in/samia-tasmin-nova/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">LinkedIn</a> •
+                                <a href="https://www.facebook.com/share/1CMpyv1oiL/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">Facebook</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+                    <!-- <form class="w-full bg-slate-950 border border-slate-800 rounded-2xl p-7">
+
+                        <label class="block text-sm font-medium text-slate-300 mb-2">
+                            Name
+                        </label>
+                        <input type="text" placeholder="Your name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition">
+
+                        <label class="block text-sm font-medium text-slate-300 mt-5 mb-2">
+                            Email
+                        </label>
+                        <input type="email" placeholder="Your email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition">
+
+                        <label class="block text-sm font-medium text-slate-300 mt-5 mb-2">
+                            Message
+                        </label>
+                        <textarea rows="5" placeholder="Write your message..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition resize-none"></textarea>
+
+                        <button type="submit" class="w-full mt-5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3 rounded-lg transition">
+                            Send Message
+                        </button>
+
+                    </form> -->
+                    <form id="contactForm" class="w-full bg-slate-950 border border-slate-800 rounded-2xl p-7">
+
+                        <label class="block text-sm font-medium text-slate-300 mb-2">
+        Name
+    </label>
+
+                        <input id="name" type="text" placeholder="Your name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition">
+
+                        <label class="block text-sm font-medium text-slate-300 mt-5 mb-2">
+                        Email
+                        </label>
+
+                        <input id="email" type="email" placeholder="Your email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition">
+
+                        <label class="block text-sm font-medium text-slate-300 mt-5 mb-2">
+                        Message
+                        </label>
+
+                        <textarea id="message" rows="5" placeholder="Write your message..." required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-cyan-400 transition resize-none"></textarea>
+
+                        <button type="submit" class="w-full mt-5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3 rounded-lg transition">
+                        Send Message
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+            <p class="text-slate-500 text-sm">
+                © 2026 Samia Tasmin Nova. All rights reserved.
+            </p>
+
+            <p class="text-slate-500 text-sm">
+                Built with HTML & Tailwind CSS
+            </p>
+
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const subject = "Portfolio Contact from " + name;
+
+            const body =
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n\n" +
+                "Message:\n" + message;
+
+            const mailtoLink =
+                "mailto:samiatasminnova@gmail.com" +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+</body>
+
+</html>
