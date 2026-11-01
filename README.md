@@ -13,3 +13,5 @@ npm run build
 
 ## Deploy
 Import this repo on https://vercel.com - the Vite preset is detected automatically.
+
+link:  https://nova-portfolio-sable.vercel.app/
